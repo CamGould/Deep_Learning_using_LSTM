@@ -47,27 +47,19 @@ This file contains the [raw FNG indicators for BTC](https://github.com/CamGould/
     2. In the second notebook, fit the data using only closing prices.
 
 ###  Key Findings and Visuals 
-Let's examine the price predictions of each model:
-<br>
-<br>
+#### Visual Price Predictions of Each Model:
 ***The Model using Closing Price*** - the far better performing model:
 <br>
 ![](https://github.com/CamGould/Deep_Learning_using_LSTM/blob/main/Supplemental/Closing_graph.png?raw=true)
 <br>
 <br>
-Ethereum - Descriptive Statistics:
+***The Model using FNG Indicators*** - a poor performing model:
 <br>
-![](https://github.com/CamGould/Natural_Language_Processing/blob/main/Supplemental/ETH_Results_NLP.png?raw=true)
-<br>
-<br>
-Here are the word clouds generated from each coins sentiment analysis.
+![](https://github.com/CamGould/Deep_Learning_using_LSTM/blob/main/Supplemental/FNG_graph.png?raw=true)
 <br>
 <br>
-Bitcoin - word cloud visual
-<br>
-![](https://github.com/CamGould/Natural_Language_Processing/blob/main/Supplemental/BTC_word_cloud.png?raw=true)
-<br>
-<br>
-Ethereum - word cloud visual
-<br>
-![](https://github.com/CamGould/Natural_Language_Processing/blob/main/Supplemental/ETH_Word_Cloud.png?raw=true)
+
+#### Evaluating the Performance of Each Model
+
+*Which model has a lower loss?*
+<br> 
