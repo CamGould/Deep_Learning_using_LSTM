@@ -63,3 +63,13 @@ This file contains the [raw FNG indicators for BTC](https://github.com/CamGould/
 
 *Which model has a lower loss?*
 <br> 
+The loss value for each epoch in the training and validation stage displays how well the model is behaving after each stage of its optimization. After looking at how the models each performed, it is no suprise that the **Closing Price Model** had a lower loss than the *FNG Model*. The results for eachof these can be found in their notebooks when the model is running the epochs.
+<br>
+<br>
+*Which model tracks the actual values better over time?*
+<br>
+When comparing the two graphs of the outputs of each model it is not hard to tell that the **Closing Price Model** tracked the actual values far better. If the two models were closer, and we could not tell right away from the visuals, I would take the average distance the model's price prediction was off of the actual price to determine this answer.
+<br>
+<br>
+*Which window size works best for the models?*
+In the end I decided to go with a 10-day closing price window. I found that by having a larger window, the model was predicting prices. using smoother data. This in return helped to minimize some of the outliers, or extremes, that were effecting the model's accuracy of predictions.
