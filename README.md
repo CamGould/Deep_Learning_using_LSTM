@@ -22,9 +22,16 @@ This notebook contains the [LSTM Stock Predictor from Closing Price](https://git
 <br>
 This notebook contains the [LSTM Stock Predictor from FNG Indicators](https://github.com/CamGould/Deep_Learning_using_LSTM/blob/main/Coding%20Notebooks/%5B2%5DLSTM_Stock_Predictor_FNG.ipynb)
 <br>
+<br>
 This graph shows the [price predictions for the closing price model](https://github.com/CamGould/Deep_Learning_using_LSTM/blob/main/Supplemental/Closing_graph.png)
 <br>
 This graph shows the [price predictions for the FNG model](https://github.com/CamGould/Deep_Learning_using_LSTM/blob/main/Supplemental/FNG_graph.png)
+<br>
+<br>
+This file contains the [raw closing prices for BTC](https://github.com/CamGould/Deep_Learning_using_LSTM/blob/main/Supplemental/btc_historic.csv)
+<br>
+This file contains the [raw FNG indicators for BTC](https://github.com/CamGould/Deep_Learning_using_LSTM/blob/main/Supplemental/btc_sentiment.csv)
+
 ### Project Outline and Instructions
 #### Here is the structure of the [NLP Python Notebook](https://github.com/CamGould/Natural_Language_Processing/blob/main/Coding%20Notebooks/%5B1%5DCrypto_Sentiment.ipynb):
 1. Sentiment Analysis 
