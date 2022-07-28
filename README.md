@@ -33,28 +33,26 @@ This file contains the [raw closing prices for BTC](https://github.com/CamGould/
 This file contains the [raw FNG indicators for BTC](https://github.com/CamGould/Deep_Learning_using_LSTM/blob/main/Supplemental/btc_sentiment.csv)
 
 ### Project Outline and Instructions
-#### Here is the structure of the [NLP Python Notebook](https://github.com/CamGould/Natural_Language_Processing/blob/main/Coding%20Notebooks/%5B1%5DCrypto_Sentiment.ipynb):
-1. Sentiment Analysis 
-    1. Here I use the [newsapi](https://newsapi.org/) to pull the latest news articles for Bitcoin and Ethereum and create a DataFrame of sentiment scores for each coin.
-    2. I use this data to derive descriptive statistics to answer the following questions:
-        1. Which coin had the *highest mean positive score*?
-        2. Which coin had the *highest negative score*?
-        3. Which coin had the *highest positive score*?
-2. Natural Language Processing 
-    1. In this section, I use *NLTK* and *Python* to tokenize text, find n-gram counts, and create word clouds for [Bitcoin](https://github.com/CamGould/Natural_Language_Processing/blob/main/Supplemental/BTC_word_cloud.png?raw=true) & [Ethereum](https://github.com/CamGould/Natural_Language_Processing/blob/main/Supplemental/ETH_Word_Cloud.png?raw=true). This involves:
-        1. Lowercasing each word
-        2. Removing all punctuation
-        3. Removing all stopwords (Stop words are a set of commonly used words in any language that are considered unimportant in NLP)
-3. Named Entity Recognition
-    1. In this section, you will build a named entity recognition model for both coins and visualize the tags using SpaCy.
+#### Prepare the Data for Training and Testing
+1. Create a Jupyter Notebook for each RNN.
+2. For the Fear and Greed model, use the FNG values to try and predict the closing price.
+3. For the closing price model, use previous closing prices to try and predict the next closing price. 
+4. Each model will need to use 70% of the data for training and 30% of the data for testing.
+5. Apply a MinMaxScaler to the X and y values to scale the data for the model.
+6. Reshape the X_train and X_test values to fit the model's requirement of samples, time steps, and features.
+
+#### Build and Train LSTM RNNs
+1. In each Jupyter Notebook, create the same custom LSTM RNN architecture. 
+    1. In the first notebook, fit the data using the FNG values. 
+    2. In the second notebook, fit the data using only closing prices.
 
 ###  Key Findings and Visuals 
-Here are the numerical findings for the sentiments on each coin.
+Let's examine the price predictions of each model:
 <br>
 <br>
-Bitcoin - Descriptive Statistics:
+***The Model using Closing Price*** - the far better performing model:
 <br>
-![](https://github.com/CamGould/Natural_Language_Processing/blob/main/Supplemental/BTC_Results_NLP.png?raw=true)
+![](https://github.com/CamGould/Deep_Learning_using_LSTM/blob/main/Supplemental/Closing_graph.png?raw=true)
 <br>
 <br>
 Ethereum - Descriptive Statistics:
